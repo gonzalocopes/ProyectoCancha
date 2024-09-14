@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alquiler de Canchas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Opcional: Google Fonts para una mejor tipografía -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <h1>Alquiler de Canchas de Fútbol 5 y Fútbol 8</h1>
+    </header>
+
+    <section class="cancha-section">
+        <h2>Nuestras Canchas</h2>
+        <div class="canchas-container">
+            <!-- Cancha 1 -->
+            <div class="cancha" data-id="1">
+                <img src="images/cancha.jpg" alt="Cancha 1">
+                <h3>Cancha 1 (Fútbol 5)</h3>
+                <p class="estado">Disponible</p>
+                <button class="reservar-btn">Reservar</button>
+            </div>
+            <!-- Cancha 2 -->
+            <div class="cancha" data-id="2">
+                <img src="images/cancha.jpg" alt="Cancha 2">
+                <h3>Cancha 2 (Fútbol 8)</h3>
+                <p class="estado">Disponible</p>
+                <button class="reservar-btn">Reservar</button>
+            </div>
+            <!-- Cancha 3 -->
+            <div class="cancha" data-id="3">
+                <img src="images/cancha.jpg" alt="Cancha 3">
+                <h3>Cancha 3 (Fútbol 5)</h3>
+                <p class="estado">Disponible</p>
+                <button class="reservar-btn">Reservar</button>
+            </div>
+            <!-- Cancha 4 -->
+            <div class="cancha" data-id="4">
+                <img src="images/cancha.jpg" alt="Cancha 4">
+                <h3>Cancha 4 (Fútbol 8)</h3>
+                <p class="estado">Disponible</p>
+                <button class="reservar-btn">Reservar</button>
+            </div>
+            <!-- Cancha 5 -->
+            <div class="cancha" data-id="5">
+                <img src="images/cancha.jpg" alt="Cancha 5">
+                <h3>Cancha 5 (Fútbol 5)</h3>
+                <p class="estado">Disponible</p>
+                <button class="reservar-btn">Reservar</button>
+            </div>
+            <!-- Cancha 6 -->
+            <div class="cancha" data-id="6">
+                <img src="images/cancha.jpg" alt="Cancha 6">
+                <h3>Cancha 6 (Fútbol 8)</h3>
+                <p class="estado">Disponible</p>
+                <button class="reservar-btn">Reservar</button>
+            </div>
+            <!-- Cancha 7 -->
+            <div class="cancha" data-id="7">
+                <img src="images/cancha.jpg" alt="Cancha 7">
+                <h3>Cancha 7 (Fútbol 5)</h3>
+                <p class="estado">Disponible</p>
+                <button class="reservar-btn">Reservar</button>
+            </div>
+            <!-- Cancha 8 -->
+            <div class="cancha" data-id="8">
+                <img src="images/cancha.jpg" alt="Cancha 8">
+                <h3>Cancha 8 (Fútbol 8)</h3>
+                <p class="estado">Disponible</p>
+                <button class="reservar-btn">Reservar</button>
+            </div>
+            <!-- Cancha 9 -->
+            <div class="cancha" data-id="9">
+                <img src="images/cancha.jpg" alt="Cancha 9">
+                <h3>Cancha 9 (Fútbol 5)</h3>
+                <p class="estado">Disponible</p>
+                <button class="reservar-btn">Reservar</button>
+            </div>
+        </div>
+    </section>
+    <!-- Modal para el formulario de reserva -->
+<div id="modal-reserva" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Reservar Cancha</h2>
+        <form id="form-reserva">
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="fecha">Fecha de Reserva</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="hora">Hora</label>
+            <input type="time" id="hora" name="hora" required>
+
+            <button type="submit" id="confirmar-pagar-btn">Confirmar y Pagar</button>
+        </form>
+    </div>
+</div>
+    
+
+
+    <footer>
+        <p>© 2024 Alquiler de Canchas</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
+</body>
+</html>
